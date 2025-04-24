@@ -1,0 +1,146 @@
+$main-color: #2d559f;
+$el-font-blue: #09d5f6;
+$el-bg-blue: #142a52;
+.people-bar {
+  z-index: 99;
+  position: absolute;
+  top: 90px;
+  left: 360px;
+  display: flex;
+  flex-direction: column;
+
+  :deep(.el-overlay-dialog) {
+    position: absolute !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    overflow: visible !important;
+
+    .el-dialog__header {
+      margin-right: 0;
+      padding: 7px 10px;
+      display: flex;
+      justify-content: space-between;
+      background-color: $main-color;
+      color: #fff;
+      .el-dialog__close {
+        color: #fff;
+      }
+
+      .el-dialog__headerbtn {
+        width: auto;
+        height: auto;
+        position: unset;
+        display: flex;
+      }
+
+      .tool-title {
+        display: flex;
+        align-items: center;
+        letter-spacing: 1px;
+      }
+      .title-txt {
+        margin-right: 3px;
+      }
+    }
+
+    .el-dialog__body {
+      // width: 520px;
+      // padding: 5px 15px;
+      padding: 0;
+      padding-top: 10px;
+    }
+  }
+
+  :deep(> div:nth-of-type(n + 1)) {
+    position: unset !important;
+  }
+}
+
+.people-transform {
+  left: 30px !important;
+}
+
+:deep(.peopleDialog) {
+  width: 450px;
+  margin: 0;
+  .options {
+    .title {
+      width: 50%;
+      text-align: center;
+      position: absolute;
+      // left: 20%;
+      font-size: 14px;
+      .status-point {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #1a9bfc;
+        margin-bottom: 3px;
+      }
+    }
+
+    display: flex;
+    .gender{
+       #gender{
+      width: 225px;
+      height: 225px;
+    }
+    }
+    .age{
+       #age{
+      width: 225px;
+      height: 225px;
+    }
+    }
+
+   
+
+    .historyPeople {
+      margin-top: 10px;
+      // height: 250px;
+      .title {
+        position: unset;
+        width: 100%;
+        margin-bottom: -40px;
+      }
+      #historyPeople{
+       width: 450px;
+       height: 300px;
+      }
+    }
+    .peopleLayer {
+      padding: 0 20px 0;
+      margin-bottom: 20px;
+      .title {
+        font-weight: bold;
+        text-align: left;
+        position: unset !important;
+      }
+      .layer{
+         .item {
+        display: flex;
+        // height: 25px;
+        .elcheck{
+          width: 140px;
+        }
+        .elsilder{
+         width: 250px;
+
+        }
+        .el-slider__button{
+display: none;
+        }
+        .el-slider__bar{
+background-color: #1a9bfc;
+        }
+
+
+      }
+      }
+     
+    }
+  }
+}

@@ -1,0 +1,486 @@
+$main-color: #2d559f;
+/* 工具栏 */
+.tool-bar {
+    z-index: 99;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    .tool-btn {
+        width: 50px;
+        height: 50px;
+
+        :deep(> span) {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            .iconfont {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    :deep(> div:nth-of-type(n + 1)) {
+        position: unset !important;
+    }
+}
+.tool-focus {
+    color: #fff !important;
+    background-color: $main-color !important;
+}
+.measure-focus {
+    color: $main-color !important;
+    background-color: rgba($color: $main-color, $alpha: 0.15);
+}
+
+:deep(.tool-basemap) {
+    max-width: 300px !important;
+    width: 300px;
+    padding: 0 !important;
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    position: absolute;
+    top: 60px;
+    right: 85px;
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    .tool-main {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .tool-item {
+        width: 48%;
+        margin-bottom: 5px;
+        font-size: 14px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .base-img {
+            border: 1.5px solid #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 66px;
+            width: 100%;
+            .el-image {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            color: $main-color;
+            .base-img {
+                border-color: $main-color;
+            }
+        }
+    }
+    .focus-base {
+        color: $main-color !important;
+        .base-img {
+            border-color: $main-color;
+        }
+    }
+}
+
+:deep(.tool-scale) {
+    max-width: 300px !important;
+    width: 200px;
+    padding: 0 !important;
+    box-shadow: none;
+    background-color: transparent;
+    position: absolute;
+    top: 60px;
+    right: 85px;
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    .el-dialog__header {
+        background-color: transparent !important;
+        padding: 0 !important;
+        display: flex;
+        height: auto !important;
+        border-radius: 4px;
+        box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    }
+    .el-dialog__body {
+        display: none !important;
+    }
+    .el-select {
+        flex: 1;
+        .el-input {
+            height: 32px;
+        }
+        .el-input__wrapper {
+            padding-right: 1px;
+            padding-left: 24px;
+        }
+        .el-input__suffix {
+            width: 32px;
+            background-color: $main-color;
+            display: grid;
+            place-items: center;
+            border-radius: 4px;
+            .el-icon {
+                margin: 0;
+                color: #fff;
+            }
+        }
+    }
+    .icon-chizi,
+    .icon-yinqing_juli {
+        position: absolute;
+        left: 5px;
+        font-size: 18px;
+        color: $main-color;
+    }
+    .el-select .el-input.is-focus .el-input__wrapper {
+        box-shadow: inherit !important;
+    }
+    .tool-main {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+}
+
+:deep(.tool-attr) {
+    width: 280px !important;
+    padding: 0 !important;
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    right: 85px;
+    .attr-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        > .icon-dingwei {
+            font-size: 18px !important;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        .el-select {
+            flex: 1;
+            .el-input__wrapper {
+                border: 1px solid $main-color;
+                box-shadow: none;
+            }
+        }
+    }
+    .attr-main {
+        .el-table {
+            background-color: transparent;
+            * {
+                border-color: #dfe8f7 !important;
+            }
+            td {
+                border-bottom: 0;
+            }
+
+            tr {
+                background-color: transparent;
+                color: #555;
+                .cell {
+                    cursor: default;
+                }
+            }
+
+            .el-table__row--striped,
+            th {
+                background-color: #dfe8f7;
+            }
+            .el-table__border-left-patch,
+            .el-table__inner-wrapper::after,
+            &::after,
+            &::before,
+            .el-table__inner-wrapper::before {
+                background-color: #dfe8f7;
+            }
+
+            .el-table__body tr:hover > td.el-table__cell {
+                background-color: #dfe8f7;
+                color: $main-color;
+            }
+        }
+    }
+}
+
+:deep(.tool-measure) {
+    width: 320px !important;
+    padding: 0 !important;
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    border-radius: 4px;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    right: 85px;
+    overflow: hidden;
+    .tool-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tool-item {
+        font-size: 12px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        border-radius: 4px;
+        .base-img {
+            flex: 1;
+            overflow: hidden;
+            margin-bottom: 10px;
+            .iconfont {
+                font-size: 30px;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            color: $main-color;
+            background-color: rgba($color: $main-color, $alpha: 0.15);
+        }
+        .icon-sanjiaoxing {
+            font-weight: 700;
+        }
+    }
+}
+
+:deep(.tool-split) {
+    max-width: 300px !important;
+    width: 300px;
+    padding: 0 !important;
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    position: absolute;
+    top: 60px;
+    right: 85px;
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    .tool-main {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .split-item {
+        width: 48%;
+        margin-bottom: 5px;
+        font-size: 14px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        &:nth-of-type(-n + 2) {
+            margin-bottom: 0;
+        }
+        &:hover {
+            background-color: #dfe8f7;
+        }
+        > div {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+        .split-1 {
+            display: flex;
+            > span {
+                flex: 1;
+                display: grid;
+                place-items: center;
+                border: 2px solid $main-color;
+                &:first-of-type {
+                    margin-right: -2px;
+                }
+            }
+        }
+        .split-2 {
+            display: flex;
+            div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &:first-of-type {
+                    border: 2px solid $main-color;
+                }
+                span {
+                    flex: 1;
+                    width: 100%;
+                    border: 2px solid $main-color;
+                    display: grid;
+                    place-items: center;
+                    &:last-of-type {
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+        .split-3 {
+            display: flex;
+            div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &:first-of-type {
+                    border: 2px solid $main-color;
+                }
+                span {
+                    width: 100%;
+                    flex: 1;
+                    border: 2px solid $main-color;
+                    display: grid;
+                    place-items: center;
+                    &:nth-of-type(2) {
+                        margin-top: -2px;
+                        margin-bottom: -2px;
+                    }
+                }
+            }
+        }
+        .split-4 {
+            display: flex;
+            flex-wrap: wrap;
+            span {
+                width: 50%;
+                border: 2px solid $main-color;
+                box-sizing: border-box;
+                display: grid;
+                place-items: center;
+                &:first-of-type {
+                    margin-bottom: -2px;
+                    margin-right: -2px;
+                    box-sizing: border-box;
+                }
+                &:nth-of-type(2) {
+                    margin-bottom: -2px;
+                    box-sizing: border-box;
+                }
+                &:last-of-type {
+                    margin-left: -2px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+    .split-focus {
+        background-color: #dfe8f7;
+        color: #2d559f;
+    }
+}
+
+:deep(.el-overlay-dialog) {
+    position: absolute !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    overflow: visible !important;
+    .el-dialog__header {
+        margin-right: 0;
+        padding: 6px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $main-color;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 2px;
+        .el-dialog__close {
+            color: #fff;
+        }
+        .el-dialog__headerbtn {
+            width: auto;
+            height: auto;
+            position: unset;
+        }
+        .tool-title {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tool-bd {
+            display: inline-block;
+            width: 4px;
+            height: 16px;
+            background: $main-color;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+    }
+    .el-dialog__body {
+        padding: 10px;
+    }
+}
+
+.switch-box {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 99;
+    :deep(.el-button) {
+        &:focus {
+            color: #666 !important;
+            background-color: #fff !important;
+        }
+    }
+}
+.map-control {
+    position: absolute;
+    top: 70px;
+    right: 28px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    background-color: #fff;
+    z-index: 99;
+    .el-button {
+        padding: 10px 8px;
+        border-radius: 0;
+        border-width: 1px 0;
+        &:first-of-type {
+            border-top: 0;
+        }
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+    .el-button + .el-button {
+        margin-left: 0;
+    }
+    .iconfont {
+        margin-right: 5px;
+    }
+    .el-button:focus {
+        color: unset;
+        background-color: unset;
+    }
+}

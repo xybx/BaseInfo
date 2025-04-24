@@ -1,0 +1,103 @@
+$main-color: #2d559f;
+
+.tool-bar {
+    z-index: 99;
+    position: absolute;
+    top: 90px;
+    left: 340px;
+    display: flex;
+    flex-direction: column;
+
+    :deep(.el-overlay-dialog) {
+        position: absolute !important;
+        top: auto !important;
+        right: auto !important;
+        left: auto !important;
+        bottom: auto !important;
+        overflow: visible !important;
+
+        .el-dialog__header {
+            margin-right: 0;
+            padding: 7px 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: $main-color;
+            color: #fff;
+            .el-dialog__close {
+                color: #fff;
+            }
+
+            .el-dialog__headerbtn {
+                width: auto;
+                height: auto;
+                position: unset;
+                display: flex;
+            }
+
+            .tool-title {
+                display: flex;
+                align-items: center;
+                letter-spacing: 1px;
+            }
+            .title-txt {
+                margin-right: 3px;
+            }
+        }
+
+        .el-dialog__body {
+            padding: 16px 15px;
+        }
+    }
+
+    :deep(> div:nth-of-type(n + 1)) {
+        position: unset !important;
+    }
+}
+
+.tool-transform {
+    left: 10px !important;
+}
+
+:deep(.tool-basemap) {
+    width: 300px;
+    padding: 0 !important;
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    overflow: hidden;
+    .tool-main {
+        text-align: center;
+    }
+    .build-form {
+        // display: flex;
+        // align-items: center;
+        // margin-bottom: 10px;
+        > div {
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .build-label {
+            margin-right: 5px;
+        }
+        .build-unit {
+            margin-left: 5px;
+        }
+        .el-select,
+        .el-input-number {
+            flex: 1;
+        }
+    }
+    .result-box {
+        padding: 5px;
+        border: 1px dashed $main-color;
+        margin-top: 10px;
+        border-radius: 4px;
+        .res-label {
+            color: $main-color;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}

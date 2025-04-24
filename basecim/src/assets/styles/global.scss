@@ -1,0 +1,176 @@
+$main-color: #2d559f;
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+    $colors: (
+        'primary': (
+            'base': $main-color,
+        ),
+    )
+);
+
+@use 'element-plus/theme-chalk/src/index.scss' as *;
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// 地图
+.esri-view-surface--inset-outline:focus::after {
+    outline: none !important;
+}
+.esri-view .esri-view-surface:focus::after {
+    outline: none !important;
+}
+.esri-icon-dial:before {
+    content: '' !important;
+}
+.esri-ui-bottom-right {
+    bottom: 20px;
+}
+.esri-compass {
+    background: rgba($color: #000000, $alpha: 0.6);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    &:hover {
+        background: rgba($color: #000000, $alpha: 0.6);
+        color: #fff;
+    }
+}
+
+/* 工具条 */
+.tool-popper {
+    width: auto !important;
+    min-width: auto !important;
+    padding: 0 !important;
+    li {
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: 0.3s;
+        &:hover {
+            color: $main-color;
+            background-color: #dfe8f7;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .el-button {
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: 0.3s;
+        &:hover {
+            color: $main-color;
+            background-color: #dfe8f7;
+        }
+    }
+}
+
+/* 图层透明度控制条 */
+.opacity-popper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: 0 !important;
+    .el-slider__button-wrapper {
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .el-slider__button {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .el-slider {
+        --el-slider-height: 3px;
+    }
+}
+
+/* 状态栏视图 */
+.viewport-popper {
+    width: auto !important;
+    min-width: auto !important;
+    padding: 2px !important;
+    .el-button {
+        border: 0;
+    }
+}
+
+/* 收藏栏图层 */
+.collect-popover {
+    width: 300px !important;
+    .layer-tree {
+        padding-right: 10px;
+        font-size: 16px;
+        color: $main-color;
+        .el-tree-node {
+            white-space: pre-wrap;
+            &:has(.is-checked) {
+                color: #333;
+            }
+        }
+        .el-tree-node__label {
+            flex: 1;
+        }
+        .not-server {
+            font-weight: 700;
+        }
+        .is-checked span {
+            color: #333;
+        }
+
+        .el-tree-node__content {
+            flex: 1;
+            height: auto;
+            flex-wrap: wrap;
+            padding: 5px 0;
+        }
+        .el-tree-node__content:hover {
+            color: $main-color;
+            .el-icon {
+                color: $main-color;
+            }
+        }
+        .custom-tree-node {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .el-tree-node__expand-icon.is-leaf {
+            color: transparent !important;
+        }
+        .iconfont {
+            font-size: 14px;
+            padding: 0 3px;
+        }
+        .tree-tools {
+            margin-left: 3px;
+        }
+        .icon-suofangjibie,
+        .icon-toumingdu {
+            &:hover {
+                cursor: pointer !important;
+            }
+        }
+
+        .el-checkbox.is-disabled {
+            display: none;
+        }
+        .el-checkbox {
+            height: auto;
+        }
+        .is-current {
+            border-left: 4px solid $main-color;
+            .el-tree-node__content {
+                background-color: #eaeef5;
+            }
+        }
+    }
+}

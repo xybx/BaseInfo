@@ -1,0 +1,96 @@
+$main-color: #2d559f;
+.func-bar {
+    z-index: 99;
+    position: absolute;
+    top: 90px;
+    // left: 297px;
+    left: 340px;
+    display: flex;
+    flex-direction: column;
+
+    :deep(.el-overlay-dialog) {
+        position: absolute !important;
+        top: auto !important;
+        right: auto !important;
+        left: auto !important;
+        bottom: auto !important;
+        overflow: visible !important;
+
+        .el-dialog__header {
+            margin-right: 0;
+            padding: 7px 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: $main-color;
+            color: #fff;
+            .el-dialog__close {
+                color: #fff;
+            }
+
+            .el-dialog__headerbtn {
+                width: auto;
+                height: auto;
+                position: unset;
+                display: flex;
+            }
+
+            .tool-title {
+                display: flex;
+                align-items: center;
+                letter-spacing: 1px;
+            }
+            .title-txt {
+                margin-right: 3px;
+            }
+        }
+
+        .el-dialog__body {
+            padding: 10px 15px;
+        }
+    }
+
+    :deep(> div:nth-of-type(n + 1)) {
+        position: unset !important;
+    }
+}
+
+.tool-transform {
+    left: 10px !important;
+}
+
+:deep(.tool-basemap) {
+    width: 300px;
+    padding: 0 !important;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+
+    .tool-main {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        .el-form {
+            .el-form-item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .el-input__inner {
+        &::placeholder {
+            letter-spacing: 2px;
+        }
+    }
+
+    .handle-btns {
+        display: flex;
+        justify-content: center;
+
+        .el-button {
+            padding: 7px 26px;
+            height: auto;
+        }
+    }
+}

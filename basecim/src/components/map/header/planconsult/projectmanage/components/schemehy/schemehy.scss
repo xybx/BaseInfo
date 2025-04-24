@@ -1,0 +1,37 @@
+$main-color: #2d559f;
+$el-font-blue: #09d5f6;
+$el-bg-blue: #142a52;
+#project-hy {
+    z-index: 9999;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    background-color: rgba($color: #000, $alpha: 0.6);
+    box-shadow: 0px 0px 7px 0px rgba(76, 138, 207, 0.48);
+    display: flex;
+    .pro-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 10px 30px;
+        margin: 5px;
+        border-radius: 4px;
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            color: $main-color;
+        }
+        i {
+            font-size: 18px;
+        }
+        span {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    }
+}

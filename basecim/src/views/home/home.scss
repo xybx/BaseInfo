@@ -1,0 +1,112 @@
+$main-color: #2d559f;
+.index-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    > :deep(.el-overlay) {
+        position: unset;
+    }
+    :deep(.stat-drawer) {
+        width: auto;
+        left: 340px;
+        right: 60px;
+        bottom: 35px;
+        border-radius: 4px;
+        height: auto !important;
+        .el-drawer__header {
+            padding: 5px 10px;
+            margin-bottom: 0;
+            background-color: $main-color;
+            color: #fff;
+            .el-drawer__close-btn {
+                transition: 0.3s;
+                &:hover {
+                    border-radius: 4px;
+                    background-color: #fff;
+                }
+            }
+        }
+        .el-drawer__body {
+            padding: 5px 10px;
+            .cell {
+                cursor: default;
+            }
+            .el-table__header {
+                .cell {
+                    color: $main-color;
+                }
+            }
+            .el-pagination {
+                width: 100%;
+                margin-top: 5px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+#map,
+#splitMap,
+#map2d,
+.split-mode-2 {
+    flex: 1;
+}
+#splitMap,
+#splitMap1,
+#splitMap2 {
+    border-left: 1px solid #ccc;
+}
+#map-swipe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+#swipe-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: $main-color;
+    transform: translateX(-50%);
+    z-index: 10;
+    filter: opacity(0.9);
+    .swipe-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $main-color;
+        cursor: ew-resize;
+        font-size: 26px;
+        color: #fff;
+    }
+}
+
+.split-mode-2 {
+    display: flex;
+    flex-direction: column;
+    > div {
+        flex: 1;
+    }
+    #splitMap1 {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+:deep(.esri-ui-top-left) {
+    top: 100px !important;
+    left: 46px !important;
+    .esri-widget__heading {
+        background-color: #2d559f;
+        color: #fff;
+    }
+}

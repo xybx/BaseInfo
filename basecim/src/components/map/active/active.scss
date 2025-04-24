@@ -1,0 +1,30 @@
+/* 动态栏 */
+.active-bar {
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 26px;
+    background: rgba($color: #000000, $alpha: 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    .state-box {
+        flex: 1;
+        color: #fff;
+        text-align: right;
+        > span {
+            margin-left: 20px;
+            cursor: default;
+            .iconfont {
+                margin-right: 5px;
+            }
+            .state-label {
+                font-style: normal;
+            }
+        }
+    }
+}
