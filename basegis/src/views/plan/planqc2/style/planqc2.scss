@@ -1,0 +1,144 @@
+.el-aside {
+    width: 350px !important;
+    padding: 10px;
+    box-sizing: border-box;
+    .form-box {
+        display: flex;
+        .el-form {
+            margin-right: 10px;
+            .el-form-item {
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .search-box {
+            .el-button {
+                height: 100%;
+            }
+        }
+    }
+    ::v-deep .left-table-box {
+        margin-top: 10px;
+        .el-table {
+            .el-table__body-wrapper {
+                max-height: 74vh;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+.el-main {
+    background-color: #eee;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+::v-deep .ledger {
+    width: 480px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    box-sizing: border-box;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        box-sizing: border-box;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 10px !important;
+        box-sizing: border-box;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+    .el-tree-node__label {
+        font-size: 16px;
+    }
+    .el-tree-node__content {
+        padding: 5px 0;
+    }
+}
+
+::v-deep .res-dialog {
+    width: 480px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 1050px;
+    opacity: 0.9;
+    box-sizing: border-box;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        box-sizing: border-box;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 10px !important;
+        box-sizing: border-box;
+    }
+    .tips {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 40px;
+            border: 2px dashed $el-main-color;
+            border-radius: 4px;
+            background-color: #eaeef5;
+            .tips-head {
+                font-size: 18px;
+                font-weight: 700;
+                color: $el-main-color;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .el-table {
+        .el-table__body-wrapper {
+            max-height: 40vh;
+            overflow-y: auto;
+        }
+    }
+}
+
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}

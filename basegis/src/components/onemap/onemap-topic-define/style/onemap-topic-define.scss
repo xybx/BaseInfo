@@ -1,0 +1,134 @@
+::v-deep .define {
+    width: auto;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+
+::v-deep .define {
+    .define-main {
+        display: flex;
+        .legend {
+            width: 300px;
+            margin-right: 20px;
+            .line {
+                text-align: center;
+            }
+            .define-form {
+                .el-select {
+                    width: 100%;
+                }
+
+                .btns {
+                    text-align: center;
+                    .upload {
+                        .creat-pic {
+                            margin-left: 15px;
+                        }
+                        .el-upload-list {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .map {
+            height: 695px;
+            width: 1000px;
+            background-color: #eee;
+            position: relative;
+        }
+        .verticalClass {
+            width: 695px;
+            height: 800px;
+        }
+        .el-table {
+            th {
+                background-color: #fff !important;
+                color: #999;
+                .el-checkbox__inner {
+                    border-color: #dcdfe6;
+                }
+            }
+            .el-table__body-wrapper {
+                height: 100px !important;
+                overflow-y: auto;
+            }
+        }
+        .el-radio-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .el-radio {
+            width: 25%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            .iconfont {
+                font-size: 20px;
+                padding: 5px;
+                margin-bottom: 5px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+            }
+            .el-radio__input {
+                display: none;
+            }
+            .el-radio__label {
+                padding-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .label-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .label-module {
+            padding: 4px;
+            box-sizing: border-box;
+            border: 2px solid $el-main-color;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            position: relative;
+            .cancel-label {
+                position: absolute;
+                width: 100px;
+                text-align: center;
+                top: 40px;
+                left: 0;
+            }
+            .el-radio__input.is-checked + .el-radio__label .iconfont {
+                background: #eaeef5;
+            }
+        }
+    }
+}

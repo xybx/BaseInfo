@@ -1,0 +1,153 @@
+.container {
+    height: 100%;
+    display: flex;
+}
+
+.tree {
+    width: 113px;
+    display: flex;
+    border-right: 1px solid #e6e6e6;
+
+    >div {
+        height: 100%;
+    }
+
+    .el-menu {
+        .el-menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            i {
+                margin-bottom: 5px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .tree-left {
+        display: flex;
+        flex-direction: column;
+
+        .el-menu1 {
+            flex: 1;
+        }
+
+        .el-menu2 {
+            border-top: 1px dashed #ccc;
+        }
+    }
+
+    .tree-right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        // width: 400px;
+        // display: flex;
+        
+
+        .el-tree {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        :deep(.el-tree-node__label) {
+            font-size: 15px;
+        }
+
+        :deep(.el-tree-node) {
+            white-space: pre-wrap;
+        }
+
+        :deep(.el-tree-node__content) {
+            height: auto;
+        }
+
+        :deep(.tree-scope) {
+            font-size: 15px;
+
+            .el-icon-warning {
+                color: $el-main-color;
+            }
+        }
+    }
+
+    .cont-head {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #eee;
+        font-size: 16px;
+        cursor: default;
+    }
+}
+
+.map-box {
+    flex: 1;
+    position: relative;
+    display: flex;
+
+    .attr-box {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 300px;
+        height: auto;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 15px;
+        background-color: #fff;
+
+        :deep(.el-table) {
+            .cell {
+                cursor: default;
+            }
+        }
+
+        .text-head {
+            font-size: 18px;
+            font-weight: 700;
+            color: $el-main-color;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed $el-main-color;
+        }
+
+        .attr-table-box {
+            padding: 10px;
+        }
+
+        .attr-text {
+            font-size: 15px;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px dotted #ccc;
+            box-sizing: border-box;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .up-arrows {
+            background: url('~@/assets/images/monitor-images/up.png') no-repeat center;
+        }
+
+        .down-arrows {
+            background: url('~@/assets/images/monitor-images/down.png') no-repeat center;
+        }
+    }
+
+
+}
+
+.map {
+    flex: 1;
+}

@@ -1,0 +1,37 @@
+.yearchange-container {
+    height: 100%;
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto;
+    .el-pagination {
+        text-align: center;
+        margin-top: 8px;
+    }
+    .yearTable {
+        overflow-y: auto;
+        border-bottom: 1px solid #ebeef5;
+        &::before {
+            height: 0;
+        }
+    }
+    .zb-year {
+        display: inline-flex;
+        align-items: center;
+    }
+    .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    .up-arrows {
+        background: url('~@/assets/images/monitor-images/up.png') no-repeat
+            center;
+    }
+    .down-arrows {
+        background: url('~@/assets/images/monitor-images/down.png') no-repeat
+            center;
+    }
+}

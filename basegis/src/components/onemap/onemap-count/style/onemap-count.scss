@@ -1,0 +1,266 @@
+::v-deep .count {
+    width: 530px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.9;
+    display: flex;
+    .el-dialog__header {
+        padding: 0 !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-icon-close {
+            color: $el-main-color !important;
+        }
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 5px !important;
+            right: 5px;
+            z-index: 99;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 0 !important;
+        flex: 1;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+
+::v-deep .count-attr {
+    width: 430px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 1050px;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        text-align: left;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 10px 20px !important;
+        .prop-sel {
+            margin-bottom: 10px;
+            color: $el-main-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .el-select {
+                flex: 1;
+                .el-select__caret {
+                    color: $el-main-color;
+                }
+            }
+            .el-input__inner {
+                font-weight: 700;
+                color: $el-main-color;
+                border-color: $el-main-color;
+                font-size: 16px;
+            }
+            .el-input__suffix {
+                color: #fff;
+            }
+            .count-box {
+                margin-left: 10px;
+                padding: 6px 10px;
+                background: $el-main-color;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        .tags {
+            margin: 8px 0;
+            overflow-x: auto;
+            .el-tag {
+                cursor: pointer;
+                margin-bottom: 8px;
+                font-size: 16px;
+            }
+            .el-tag + .el-tag {
+                margin-left: 8px;
+            }
+        }
+        .el-table {
+            .el-table__body-wrapper {
+                max-height: 57vh;
+                overflow-y: auto;
+            }
+        }
+        .el-table th {
+            background-color: #eaeef5 !important;
+            color: $el-main-color !important;
+        }
+        .el-table th,
+        .el-table td {
+            padding: 6px 0;
+            font-size: 16px;
+        }
+    }
+}
+
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+::v-deep .el-tabs {
+    height: 100%;
+    .el-tabs__nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .el-tabs__active-bar {
+            display: none;
+        }
+    }
+    .el-tabs__header.is-left {
+        margin-right: 0;
+    }
+    .el-tabs__item.is-left {
+        writing-mode: tb-rl;
+    }
+    .el-tabs__item {
+        flex: 1;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+        color: #fff;
+        transition: 0.3s;
+    }
+    .el-tabs__item + .el-tabs__item {
+        border-top: 1px solid #fff;
+    }
+    .el-tabs__item.is-active {
+        // color: $el-main-color;
+        // background: #fff;
+        color: #64f2f0;
+    }
+    .el-tabs__item:hover {
+        // background: #fff;
+        // color: $el-main-color;
+        color: #64f2f0;
+    }
+}
+
+::v-deep .content-box {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .content-title {
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        border-bottom: 4px solid #eceff6;
+        color: $el-main-color;
+    }
+    .content-form {
+        padding: 10px;
+        box-sizing: border-box;
+        .el-form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .el-form-item {
+            padding-right: 5px;
+            margin-bottom: 10px;
+            margin-right: 0;
+            box-sizing: border-box;
+        }
+    }
+    .form-btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .text-type {
+        width: 50%;
+        display: flex;
+        .el-form-item__content {
+            flex: 1;
+        }
+    }
+    .date-type {
+        width: 100%;
+        display: flex;
+        .el-form-item__content {
+            flex: 1;
+        }
+        .el-date-editor {
+            width: 100%;
+        }
+    }
+    .range-type {
+        width: 100%;
+        display: flex;
+        .el-form-item__content {
+            flex: 1;
+        }
+        .apart {
+            margin: 0 5px;
+        }
+    }
+}
+
+::v-deep .drawer {
+    transition: 0.3s;
+    .el-drawer__header {
+        padding: 10px;
+        margin-bottom: 0;
+        .title {
+            display: flex;
+        }
+    }
+    .el-table {
+        height: 84% !important;
+        margin-bottom: 10px;
+    }
+}
+::v-deep .drawer:focus,
+::v-deep .el-drawer:focus,
+::v-deep .el-drawer__container:focus,
+::v-deep .el-drawer__close-btn:focus,
+::v-deep .el-drawer__header > span:focus {
+    outline: none;
+}
+.el-drawer__wrapper {
+    position: unset !important;
+    font-size: 14px;
+    ::v-deep .el-drawer__container {
+        position: unset !important;
+    }
+}
+.showDrawer {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 6px;
+    z-index: 99999;
+    font-size: 20px;
+}

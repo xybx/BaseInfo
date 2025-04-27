@@ -1,0 +1,14 @@
+.map-control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    min-width: 80px;
+    text-align: center;
+}
+.control-list {
+    margin-top: 6px;
+}
+::v-deep .focusBtn {
+    background-color: $el-main-color !important;
+    color: #fff !important;
+}

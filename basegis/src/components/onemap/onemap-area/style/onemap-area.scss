@@ -1,0 +1,103 @@
+::v-deep .quhua {
+    width: 430px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+::v-deep .quhua {
+    .cunzhen {
+        margin-top: 5px;
+        display: flex;
+        .cunzhentxt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-right: 5px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .el-tabs {
+            flex: 1;
+        }
+        .el-tabs__nav {
+            height: 70px;
+            overflow-y: auto;
+            white-space: normal;
+            float: none;
+            border: 1px solid #d7d7d7;
+            border-radius: 3px;
+        }
+        .el-tabs__header {
+            margin-bottom: 8px;
+        }
+        .el-tabs__content {
+            overflow-y: auto;
+            height: 70px;
+            border: 1px solid #d7d7d7;
+            border-radius: 3px;
+        }
+        .el-tabs__item {
+            padding: 3px 5px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .el-tabs__nav-wrap::after {
+            content: none;
+        }
+        .el-tabs__active-bar {
+            height: 0;
+        }
+        .el-link {
+            padding: 2px;
+        }
+    }
+    .search-cunzhen {
+        margin-top: 5px;
+        height: 110px;
+        border: 1px solid #d7d7d7;
+        border-radius: 4px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 5px;
+        .el-link {
+            margin-right: 5px;
+            transition: 0.5s;
+        }
+    }
+    .focusLink {
+        color: $el-main-color;
+    }
+}

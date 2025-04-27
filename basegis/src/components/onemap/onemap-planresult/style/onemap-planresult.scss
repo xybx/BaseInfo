@@ -1,0 +1,79 @@
+::v-deep .liuhen {
+    width: 500px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+::v-deep .liuhen {
+    .liuhen-form {
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .el-form-item {
+            margin-right: 0;
+            margin-bottom: 15px;
+            .el-form-item__content {
+                width: 150px;
+            }
+        }
+        .date {
+            width: 100%;
+            display: flex;
+            .el-form-item__content {
+                flex: 1;
+                display: flex;
+                .el-date-editor {
+                    width: 100%;
+                }
+                .date-txt {
+                    margin: 0 6px;
+                }
+            }
+        }
+        .btns {
+            width: 100%;
+            margin-bottom: 0;
+            .el-form-item__content {
+                width: 100%;
+                text-align: center;
+            }
+            .el-button + .el-button {
+                margin-left: 40px;
+            }
+        }
+    }
+}

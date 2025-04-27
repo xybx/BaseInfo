@@ -1,0 +1,91 @@
+.login-container {
+    background: url('~@/assets/images/login2-images/background.jpg') no-repeat
+        center;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.left-title {
+    position: absolute;
+    width: 465px;
+    height: 75px;
+    left: 80px;
+    top: 60px;
+    background: url('~@/assets/images/login2-images/title_1.png') no-repeat
+        center;
+    background-size: contain;
+}
+
+.login-box {
+    position: absolute;
+    top: 216px;
+    right: 13%;
+    width: 480px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    .right-title {
+        height: 60px;
+        width: 100%;
+        background: url('~@/assets/images/login2-images/title_2.png') no-repeat
+            center;
+        background-size: contain;
+        margin-bottom: 60px;
+    }
+    .right-login {
+        flex: 1;
+        border-radius: 6px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        .login-form-title {
+            color: $el-main-color;
+            font-size: 24px;
+            text-align: center;
+            margin: 48px 0;
+            .title-english {
+                margin-top: 10px;
+                font-size: 20px;
+                color: #999999;
+            }
+        }
+        ::v-deep .login-form {
+            flex: 1;
+            padding: 0 20px;
+            .el-select {
+                width: 100%;
+            }
+            .el-input__inner {
+                height: 2.604vw;
+                line-height: 2.604vw;
+            }
+            .el-input__prefix {
+                display: flex;
+                align-items: center;
+                left: 0.417vw;
+            }
+            .el-input {
+                .el-input__icon {
+                    width: auto;
+                }
+            }
+            .login-form-item {
+                margin-top: 30px;
+                .el-form-item__content {
+                    text-align: center;
+                }
+                .el-button {
+                    width: 90%;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    box-shadow: 0 2px 12px 0
+                        rgba($color: $el-main-color, $alpha: 0.3);
+                    border-radius: 200px;
+                }
+            }
+        }
+    }
+}

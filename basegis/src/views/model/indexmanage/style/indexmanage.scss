@@ -1,0 +1,71 @@
+.handle-box {
+    margin-bottom: 10px;
+}
+.container {
+    // background-color: #f2f5fa;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.handle-select {
+    width: 120px;
+}
+
+.handle-input {
+    width: 300px;
+    display: inline-block;
+}
+.table {
+    width: 100%;
+    font-size: 14px;
+}
+.orange {
+    color: #e6a23c;
+}
+.red {
+    color: #ff0000;
+}
+.green {
+    color: #67c23a;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.table-td-thumb {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+.fr {
+    float: right;
+}
+::v-deep .set-dialog {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 15px !important;
+    }
+}
+::v-deep textarea {
+    font-family: 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+.el-select {
+    width: 100%;
+}
+

@@ -1,0 +1,71 @@
+::v-deep .current {
+    width: auto;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+
+::v-deep .current {
+    .current-main {
+        display: flex;
+        .legend {
+            width: 300px;
+            margin-right: 20px;
+            .line {
+                text-align: center;
+            }
+            .current-form {
+                .el-select {
+                    width: 100%;
+                }
+                .btns {
+                    text-align: center;
+                    .upload {
+                        .creat-pic {
+                            margin-left: 15px;
+                        }
+                        .el-upload-list {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .map {
+            flex: 1;
+            width: 1000px;
+            height: 695px;
+            background-color: #eee;
+            position: relative;
+        }
+        .verticalClass {
+            width: 695px;
+            height: 800px;
+        }
+    }
+}

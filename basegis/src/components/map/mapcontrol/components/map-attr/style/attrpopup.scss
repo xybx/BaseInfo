@@ -1,0 +1,92 @@
+::v-deep .arcdialog {
+    width: 430px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        text-align: left;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 10px 20px !important;
+        .prop-sel {
+            margin-bottom: 10px;
+            color: $el-main-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .el-select {
+                flex: 1;
+                .el-select__caret {
+                    color: $el-main-color;
+                }
+            }
+            .el-input__inner {
+                font-weight: 700;
+                color: $el-main-color;
+                border-color: $el-main-color;
+                font-size: 16px;
+            }
+            .el-input__suffix {
+                color: #fff;
+            }
+            .count-box {
+                margin-left: 10px;
+                padding: 6px 10px;
+                background: $el-main-color;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        .tags {
+            margin: 8px 0;
+            overflow-x: auto;
+            .el-tag {
+                cursor: pointer;
+                margin-bottom: 8px;
+                font-size: 16px;
+            }
+            .el-tag + .el-tag {
+                margin-left: 8px;
+            }
+        }
+        .el-table {
+            .el-table__body-wrapper {
+                max-height: 57vh;
+                overflow-y: auto;
+            }
+        }
+        .el-table th {
+            background-color: #eaeef5 !important;
+            color: $el-main-color !important;
+        }
+        .el-table th,
+        .el-table td {
+            padding: 6px 0;
+            font-size: 16px;
+        }
+    }
+}
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}

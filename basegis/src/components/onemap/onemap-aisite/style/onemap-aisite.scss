@@ -1,0 +1,68 @@
+::v-deep .aisite {
+    width: 430px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.9;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+::v-deep .aisite {
+    .el-form-item {
+        margin-bottom: 18px;
+        width: 100%;
+        display: flex;
+        .el-form-item__content {
+            flex: 1;
+        }
+        .el-select {
+            width: 100%;
+        }
+    }
+    .btns {
+        text-align: center;
+    }
+    .res-box {
+        margin-top: 10px;
+    }
+    .el-table {
+        tr {
+            cursor: pointer;
+        }
+        tr.current-row > td.el-table__cell {
+            background-color: rgba($color: #2d559f, $alpha: 0.5);
+            font-weight: 700;
+            color: #2d559f;
+        }
+    }
+}

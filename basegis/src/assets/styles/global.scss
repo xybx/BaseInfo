@@ -1,0 +1,145 @@
+// 地图工具条-底图
+.baseline-box {
+    padding: 0;
+}
+
+// 一张图-注意事项
+.popover {
+    margin-left: 15px;
+    .tips {
+        color: red;
+        div {
+            padding: 3px 0;
+        }
+    }
+    .el-popover__title {
+        background-color: #f0f8ff;
+        margin-bottom: 0;
+        padding: 10px 0;
+        padding-left: 10px;
+        letter-spacing: 1px;
+        border-radius: 4px;
+    }
+    // 注意事项-叠加图纸
+    .link-template {
+        cursor: pointer;
+        color: $el-main-color;
+        padding-bottom: 1px;
+        border-bottom: 1px solid $el-main-color;
+    }
+}
+
+// 表格表头
+.el-table {
+    th {
+        background-color: $el-main-color !important;
+        color: #fff;
+    }
+}
+
+// message加载状态
+.prop-search {
+    color: $el-main-color;
+    align-items: baseline;
+    .el-icon-loading {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+    }
+    p {
+        margin-left: 10px;
+    }
+}
+
+// 地图四小边角
+.border_corner {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: rgba(0, 0, 0, 0);
+    border: 4px solid $el-main-color;
+}
+.border_corner_left_top {
+    top: -6px;
+    left: -6px;
+    border-right: none;
+    border-bottom: none;
+    // border-top-left-radius: 2px;
+}
+.border_corner_right_top {
+    top: -6px;
+    right: -6px;
+    border-left: none;
+    border-bottom: none;
+    // border-top-right-radius: 2px;
+}
+.border_corner_left_bottom {
+    bottom: -6px;
+    left: -6px;
+    border-right: none;
+    border-top: none;
+    // border-bottom-left-radius: 2px;
+}
+.border_corner_right_bottom {
+    bottom: -6px;
+    right: -6px;
+    border-left: none;
+    border-top: none;
+    // border-bottom-right-radius: 2px;
+}
+
+/* 多色字体图标 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+// 指标模型
+.el-popover {
+    .changeone-table {
+        .el-table__body-wrapper .el-radio__label {
+            display: none;
+        }
+    }
+}
+
+// 对话框背景
+.el-dialog__wrapper {
+    overflow: hidden;
+}
+
+// 滚动条样式
+:is(div, aside, main, section)::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+}
+:is(div, aside, main, section)::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 2px;
+    background-color: #a6a9ad;
+}
+:is(div, aside, main, section)::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    background: #ededed;
+}
+
+.el-popconfirm{
+    max-width: 300px !important;
+}
+
+.orange{
+    color: #E6A23C;
+}
+.red {
+    color: #ff0000;
+}
+.green {
+    color: #67c23a;
+}
+.gray {
+    color:gray;
+}

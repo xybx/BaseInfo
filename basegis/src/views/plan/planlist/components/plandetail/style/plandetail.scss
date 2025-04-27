@@ -1,0 +1,164 @@
+.admin-container,
+.archive-container {
+    min-height: 100%;
+    font-size: 14px;
+    background-color: #f2f5f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    .title {
+        font-size: 16px;
+    }
+    .add-box {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .prj-name {
+            color: $el-main-color;
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: end;
+        }
+        .el-icon-s-fold {
+            margin-left: 10px;
+            transition: 0.3s;
+            &:hover {
+                background-color: #d7d7d7;
+            }
+        }
+    }
+    .el-pagination {
+        text-align: center;
+        margin-top: 8px;
+    }
+    .table-contain {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        :deep(.el-table) {
+            .cell {
+                font-size: 15px;
+            }
+            .el-button {
+                font-size: 15px;
+            }
+        }
+    }
+    .el-select {
+        display: block;
+    }
+    .el-dialog__footer,
+    .dialog-footer {
+        text-align: center;
+    }
+    .btns {
+        text-align: center;
+        .upload {
+            .creat-pic {
+                margin-left: 15px;
+            }
+            .el-upload-list {
+                text-align: left;
+            }
+        }
+    }
+    .el-input-group__append {
+        background: $el-main-color;
+        color: #fff;
+    }
+    td.handle-col {
+        .el-button {
+            margin: 0 5px;
+        }
+    }
+    .el-table {
+        .upload {
+            display: inline-block;
+        }
+    }
+}
+::v-deep .add-dialog {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+}
+
+.el-button--mini {
+    padding: 0.365vw 0.481vw;
+}
+
+:deep(.exam-dialog) {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+
+    .exam-main {
+        display: flex;
+        min-height: 30vh;
+        max-height: 60vh;
+        > div {
+            flex: 1;
+            overflow-y: auto;
+            .el-tree-node {
+                white-space: pre-wrap;
+            }
+            .el-tree-node__content {
+                height: auto;
+            }
+        }
+        .dialog-left {
+            border-right: 1px dashed $el-main-color;
+        }
+        .exam-title {
+            color: $el-main-color;
+            font-weight: 700;
+            font-size: 18px;
+            text-indent: 20px;
+            cursor: default;
+        }
+        .dialog-right {
+            .el-checkbox.is-checked {
+                display: none;
+            }
+        }
+    }
+    :deep(.el-tree-node__label) {
+        font-size: 15px;
+    }
+}

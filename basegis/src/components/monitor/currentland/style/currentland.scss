@@ -1,0 +1,74 @@
+::v-deep .modetail {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+}
+.modetail-container {
+    height: 37vh;
+    margin-top: 10px;
+
+    > .el-row {
+        height: 100%;
+        > .el-col {
+            height: 100%;
+        }
+    }
+    .el-card {
+        height: 100%;
+    }
+    .left-card {
+        margin-right: 10px;
+        .el-dropdown {
+            float: right;
+            .el-dropdown-link {
+                cursor: pointer;
+                color: #cccccc;
+            }
+        }
+        ::v-deep .el-tree {
+            .el-tree-node__content {
+                margin-left: 5px;
+            }
+            .el-tree-node__expand-icon {
+                position: absolute;
+                right: 2%;
+            }
+            .el-tree-node__expand-icon.expanded {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .top-box {
+        height: 100%;
+        margin-bottom: 10px;
+        ::v-deep .el-card__body {
+            height: 81%;
+        }
+    }
+    .bottom-box {
+        height: calc(40% - 10px);
+        ::v-deep .el-card__body {
+            height: 71%;
+            overflow-y: auto;
+        }
+        > .el-col {
+            height: 100%;
+        }
+    }
+}

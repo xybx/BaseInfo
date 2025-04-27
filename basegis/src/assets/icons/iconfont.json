@@ -1,0 +1,387 @@
+{
+  "id": "2934560",
+  "name": "标准版",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6347316",
+      "name": "docx",
+      "font_class": "docx",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "6347324",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "6347331",
+      "name": "txt",
+      "font_class": "txt",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "6348230",
+      "name": "xlsx",
+      "font_class": "xlsx",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "6348231",
+      "name": "png",
+      "font_class": "png",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "1263319",
+      "name": "台账",
+      "font_class": "taizhang",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "11836501",
+      "name": "知识库",
+      "font_class": "zhishiku",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "1413421",
+      "name": "安装",
+      "font_class": "anzhuang",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "577322",
+      "name": "圆形未选中",
+      "font_class": "yuanxingweixuanzhong",
+      "unicode": "e72f",
+      "unicode_decimal": 59183
+    },
+    {
+      "icon_id": "592089",
+      "name": "折线图",
+      "font_class": "zhexiantu",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "1237187",
+      "name": "规划设计",
+      "font_class": "guihuasheji",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "2015967",
+      "name": "能力评估",
+      "font_class": "pinggu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "2075245",
+      "name": "定位",
+      "font_class": "dingwei1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2077524",
+      "name": "导入",
+      "font_class": "daoru",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "2537820",
+      "name": "查询定位",
+      "font_class": "dingwei",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "3090793",
+      "name": "时空分析",
+      "font_class": "shikongfenxi",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "3253100",
+      "name": "条件查询",
+      "font_class": "chaxun",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5325364",
+      "name": "产业发展",
+      "font_class": "chanyefazhan",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "6218819",
+      "name": "项目列表",
+      "font_class": "xiangmuliebiao",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "6343480",
+      "name": "监测",
+      "font_class": "jiance",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6623479",
+      "name": "决策模型管理",
+      "font_class": "modelmg",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "6952015",
+      "name": "专题图",
+      "font_class": "zhuanti",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "7284635",
+      "name": "国土空间开发适宜性评价",
+      "font_class": "doublepingjia",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7992923",
+      "name": "核对",
+      "font_class": "hedui",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "8303358",
+      "name": "矩形",
+      "font_class": "juxing",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "10164909",
+      "name": "城市",
+      "font_class": "chengshi",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "10397358",
+      "name": "行政区划",
+      "font_class": "quhua",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11134476",
+      "name": "单行文本",
+      "font_class": "danhangwenben",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "11471321",
+      "name": "承载力分析",
+      "font_class": "chengzai",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "11685109",
+      "name": "城市设计",
+      "font_class": "chengshisheji",
+      "unicode": "e70d",
+      "unicode_decimal": 59149
+    },
+    {
+      "icon_id": "11710815",
+      "name": "公共设施",
+      "font_class": "gonggongsheshi",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "12097575",
+      "name": "模拟弹屏",
+      "font_class": "monidanping",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "12299857",
+      "name": "多边形-03",
+      "font_class": "duobianxing-",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "12462600",
+      "name": "长箭头",
+      "font_class": "bottom",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "12539909",
+      "name": "文件复制",
+      "font_class": "wenjian",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
+      "icon_id": "12837999",
+      "name": "叠加分析",
+      "font_class": "hongxian",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "13858035",
+      "name": "工具箱",
+      "font_class": "tool-cabinet_icon",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "13998293",
+      "name": "基础设施（灰）",
+      "font_class": "jichusheshi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "14076000",
+      "name": "现状",
+      "font_class": "xianzhuang",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "14192211",
+      "name": "成果质检",
+      "font_class": "chengguozhijian",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "14279279",
+      "name": "双评估",
+      "font_class": "doublepinggu",
+      "unicode": "e7a2",
+      "unicode_decimal": 59298
+    },
+    {
+      "icon_id": "15928096",
+      "name": "设施空间范围数据",
+      "font_class": "sheshikongjian",
+      "unicode": "e779",
+      "unicode_decimal": 59257
+    },
+    {
+      "icon_id": "16053884",
+      "name": "地类分析",
+      "font_class": "dilei",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "16322663",
+      "name": "人口分布",
+      "font_class": "renkoufenbu",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "18417008",
+      "name": "预选书名 选中",
+      "font_class": "yuxuan",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "18984428",
+      "name": "定期评估",
+      "font_class": "dingqipinggu",
+      "unicode": "e877",
+      "unicode_decimal": 59511
+    },
+    {
+      "icon_id": "19205808",
+      "name": "合规审查",
+      "font_class": "shencha",
+      "unicode": "e87a",
+      "unicode_decimal": 59514
+    },
+    {
+      "icon_id": "19229274",
+      "name": "生态 环境",
+      "font_class": "shengtaihuanjing",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "19453893",
+      "name": "数据汇交",
+      "font_class": "shujuhuijiao",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "20767244",
+      "name": "体检报表",
+      "font_class": "tijianbaobiao",
+      "unicode": "e831",
+      "unicode_decimal": 59441
+    },
+    {
+      "icon_id": "22071387",
+      "name": "动态监测",
+      "font_class": "dongtaijiance",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "23016934",
+      "name": "文件夹",
+      "font_class": "wenjianjia",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "23084474",
+      "name": "低效用地",
+      "font_class": "dixiaoyongdi",
+      "unicode": "e7db",
+      "unicode_decimal": 59355
+    },
+    {
+      "icon_id": "25672023",
+      "name": "一张图",
+      "font_class": "yizhangtu-copy",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}

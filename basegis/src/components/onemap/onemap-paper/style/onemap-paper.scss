@@ -1,0 +1,91 @@
+::v-deep .tuzhi {
+    // width: 430px;
+    width: 500px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+        padding-top: 10px !important;
+    }
+    .el-form-item__label {
+        font-weight: 700;
+    }
+}
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+.upload {
+    margin: 10px 0;
+    .el-upload {
+        text-align: left;
+    }
+    .el-upload__tip {
+        text-align: left;
+        color: #999;
+    }
+    .el-upload-list {
+        text-align: left;
+        margin-top: 5px;
+        height: 40px;
+        overflow-y: auto;
+        background-color: #f2f4f6;
+        border-radius: 4px;
+    }
+    .el-popover__reference {
+        float: right;
+        cursor: pointer;
+        color: $el-main-color;
+        padding-bottom: 1px;
+    }
+}
+
+::v-deep .import-box {
+    .import-title {
+        padding-bottom: 10px;
+        border-bottom: 4px solid #eceff6;
+        color: $el-main-color;
+    }
+    .el-table {
+        .el-table__body-wrapper {
+            max-height: 150px !important;
+            overflow-y: auto;
+        }
+        .el-radio__label {
+            display: none;
+        }
+    }
+    .btns {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .el-link + .el-link {
+        margin-left: 10px;
+    }
+}
+.render-btn {
+    margin-left: 10px;
+}

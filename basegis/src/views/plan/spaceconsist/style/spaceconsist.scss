@@ -1,0 +1,79 @@
+.container {
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.tree {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    .cont-head {
+        height: 40px;
+        background-color: $el-main-color;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+    }
+    .input-box {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    :deep(.el-tree-node__label) {
+        font-size: 15px;
+    }
+}
+.table {
+    flex: 1;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    .add-top-btn {
+        width: 200px;
+    }
+    :deep(.el-table) {
+        flex: 1;
+        overflow-y: auto;
+        th {
+            text-align: center;
+            .cell {
+                text-align: center;
+            }
+        }
+        .cell {
+            font-size: 15px;
+        }
+        .el-button {
+            font-size: 15px;
+        }
+    }
+    .add-top-btn {
+        margin: 5px;
+    }
+}
+
+:deep(.edit-dialog) {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .dialog-footer {
+        text-align: center;
+    }
+}

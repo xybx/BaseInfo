@@ -1,0 +1,291 @@
+// 动态监测
+.monitor-container {
+    height: 100%;
+    background-color: #f2f5f9;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    ::v-deep .header-txt {
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+            color: $el-main-color;
+        }
+    }
+
+    ::v-deep .focus-header {
+        color: $el-main-color;
+    }
+
+    ::v-deep .top {
+        height: 100%;
+
+        >.el-col {
+            height: 100%;
+        }
+
+        .top-left,
+        .top-right {
+            >div {
+                height: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .el-card__body {
+                height: 93%;
+                padding: 0;
+            }
+        }
+
+        .top-center {
+            >div {
+                height: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .el-card__body {
+                height: 100%;
+                padding: 0;
+            }
+
+            // #cityField {
+            //     background: url('../images/index-images/mapchartdemo.png')
+            //         no-repeat center;
+            //     background-size: contain;
+            // }
+        }
+    }
+
+    ::v-deep .bottom {
+        height: 39%;
+
+        >.el-col {
+            height: 100%;
+        }
+
+        .bottom-left,
+        .bottom-right {
+            >div {
+                height: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        }
+
+        .el-card__body {
+            padding: 0;
+            height: 100%;
+        }
+    }
+
+    ::v-deep .el-card__header {
+        padding: 10px;
+    }
+
+    ::v-deep .el-tabs {
+        height: 100%;
+
+        .el-tabs__content {
+            height: 80%;
+        }
+
+        .el-tab-pane {
+            height: 100%;
+        }
+
+        .el-tabs__nav-wrap {
+            padding: 0 10px;
+        }
+
+        .el-tabs__nav-wrap::after {
+            height: 1px;
+            background-color: #ebeef5;
+        }
+    }
+
+    ::v-deep .el-dialog {
+        margin-top: 12vh !important;
+
+        .el-dialog__body {
+            padding: 0 20px 20px;
+        }
+    }
+}
+
+// 详细信息
+::v-deep .modetail {
+    position: absolute;
+    right: 0;
+
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+
+
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .el-dialog__headerbtn {
+            top: 10px !important;
+
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+}
+
+.baseline-container {
+    height: 55vh;
+}
+
+.div-content>div {
+    font-size: 0.75vw;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: 0.5vw;
+    border-radius: 3px;
+    box-shadow: 2px 2px #e4e8e9;
+    cursor: pointer;
+
+    .item-title {
+        padding-bottom: 10px;
+
+        .year {
+            margin-left: 10px;
+        }
+    }
+
+    .item-content {
+        .red {
+            color: red;
+            font-size: 0.95vw;
+        }
+
+        .green {
+            color: green;
+            font-size: 0.95vw;
+        }
+
+        .normal {
+            color: black;
+            font-size: 0.95vw;
+        }
+
+        .unit {
+            color: darkgray;
+            margin-left: 10px;
+        }
+
+        .detail {
+            color: rgb(45, 85, 159);
+            float: right;
+        }
+    }
+}
+
+.div-content>:hover {
+    background-color: rgb(243, 245, 246)
+}
+
+.div-right-content>div {
+    font-size: 0.75vw;
+    padding: 5px;
+    margin: 0.5vw;
+
+    .item-content {
+        .content {
+            color: green;
+            font-size: 0.95vw;
+        }
+
+        .unit {
+            color: darkgray;
+            margin-left: 10px;
+        }
+
+        .detail {
+            color: rgb(45, 85, 159);
+            float: right;
+        }
+    }
+}
+
+
+
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+}
+.div-content-item>div{
+    padding: 2px 15px 15px 2px;
+}
+.dig-content-header {
+    font-size: 0.825vw;
+    font-weight: bold;
+
+    .title {
+        float: left;
+       // margin-top: 5px;
+    }
+    .red {
+        padding-right: 2px;
+        font-size: 1.225vw;
+        float: right;
+        color: red;
+        margin-top: -5px;
+    }
+
+    .green {
+        padding-right: 2px;
+        float: right;
+        color: green;
+        font-size: 1.225vw;
+        margin-top: -5px;
+    }
+   
+    .unit{
+        font-size: 0.725vw;
+        float: right;
+       // margin-top: 3px;
+    }
+}
+
+.dig-content-ghzb {
+    font-size: 0.825vw;
+    color: darkgray;
+    .title {
+        float: left;
+       // margin-top: 5px;
+    }
+
+    .value {
+        padding-right: 2px;
+        font-size: 0.825vw;
+        float: right;       
+         margin-top: 2px;
+    }
+    .unit{
+        font-size: 0.725vw;
+        float: right;
+       // margin-top: 3px;
+    }
+}
+
+

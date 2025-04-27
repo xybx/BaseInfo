@@ -1,0 +1,59 @@
+// .login-container {
+//     background: url('~@/assets/images/login-images/background.png') no-repeat
+//         center;
+//     background-size: cover;
+//     height: 100%;
+//     overflow: hidden;
+// }
+// .login-title {
+//     height: 148px;
+//     border-bottom: 1px solid #fff;
+//     text-align: center;
+//     background: url('~@/assets/images/login-images/login-title.png') no-repeat
+//         center;
+//     background-size: 70%;
+// }
+// .login-box {
+//     position: absolute;
+//     top: 27%;
+//     right: 13%;
+//     width: 480px;
+//     height: 509px;
+//     background: rgba(255, 255, 255, 0.8);
+//     box-shadow: 0px 10px 13px 3px rgba(0, 0, 0, 0.35);
+//     border-radius: 10px;
+
+//     .title {
+//         color: $el-main-color;
+//         font-size: 24px;
+//         text-align: center;
+//         margin-top: 48px;
+//     }
+
+//     .login-form {
+//         padding: 0 30px;
+//         box-sizing: border-box;
+//         margin-top: 60px;
+//         :deep(.el-form-item__content) {
+//             margin-left: 0 !important;
+//         }
+//         .el-form-item {
+//             margin-bottom: 40px;
+//         }
+//         .el-select {
+//             width: 100%;
+//         }
+//         .el-button {
+//             width: 100%;
+//             font-size: 18px;
+//             letter-spacing: 10px;
+//             background: $el-main-color;
+//             border-color: $el-main-color;
+//         }
+//         .el-icon-office-building,
+//         .el-icon-user {
+//             font-size: 16px;
+//             margin-left: 5px;
+//         }
+//     }
+// }

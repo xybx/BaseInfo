@@ -1,0 +1,70 @@
+.result-container {
+    height: 100%;
+}
+.result-tab {
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .planqc-bottom {
+        height: 65vh;
+        background-color: #fff;
+        box-sizing: border-box;
+        .title {
+            font-size: 16px;
+        }
+        .el-divider--horizontal {
+            margin: 10px 0;
+        }
+    }
+    .planqc-top {
+        .divide {
+            margin: 0 6px;
+        }
+
+        ::v-deep .time-range {
+            margin-right: 0;
+            .el-date-editor {
+                flex: 1;
+            }
+        }
+    }
+
+    .planqc-bottom {
+        display: flex;
+        flex-direction: column;
+        .data-class {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            .el-table {
+                flex: 1;
+                overflow-y: auto;
+            }
+            .el-table::before {
+                height: 0;
+            }
+            .el-table--border {
+                border-bottom: 1px solid #ebeef5;
+            }
+        }
+        .history-table {
+            overflow-y: auto;
+        }
+        .el-table::before {
+            height: 0;
+        }
+        .el-table--border {
+            border-bottom: 1px solid #ebeef5;
+        }
+        .el-pagination {
+            text-align: center;
+            margin-bottom: -10px;
+            margin-top: 14px;
+        }
+    }
+}

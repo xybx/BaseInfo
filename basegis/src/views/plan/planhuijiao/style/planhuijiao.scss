@@ -1,0 +1,228 @@
+.admin-container,
+.archive-container {
+    min-height: 100%;
+    font-size: 14px;
+    //background-color: #f2f5f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .title {
+        font-size: 16px;
+    }
+
+    .el-pagination {
+        text-align: center;
+        margin-top: 8px;
+        &.pagebox{
+            text-align: right;
+        }
+    }
+    .headerbox{
+        margin-bottom:20px;
+    }
+
+    .table-contain {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        ::v-deep{
+            .el-table{
+                tr{
+                    td{
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerbox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .plist{
+            display: flex;
+            flex-direction: row;
+            //align-items: center;
+            dt{
+                color:#666;
+            }
+            dd{
+                position: relative;
+                color: #666;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    width:9px;
+                    height:9px;
+                    top:calc(50% - 3px);
+                    left:-15px;
+                    background-color: #000;
+                    border-radius:50%;
+                }
+                &:nth-child(2)::before{
+                    background-color: red;
+                }
+                &:nth-child(3)::before{
+                    background-color: #ffe855;
+                }
+                &:nth-child(4)::before{
+                    background-color:#31a331;
+                }
+            }
+        }
+
+    }
+
+    .el-select {
+        display: block;
+    }
+
+    .el-dialog__footer,
+    .dialog-footer {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 6vw;
+    }
+
+    .btns {
+        text-align: center;
+
+        .upload {
+            .creat-pic {
+                margin-left: 15px;
+            }
+
+            .el-upload-list {
+                text-align: left;
+            }
+        }
+    }
+
+    .el-input-group__append {
+        background: $el-main-color;
+        color: #fff;
+    }
+
+    td.handle-col {
+        .el-button {
+            margin: 0 10px;
+        }
+    }
+    .upload-pf {
+        display: inline-block;
+    }
+}
+
+
+
+
+::v-deep .add-dialog {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .el-dialog__headerbtn {
+            top: 10px !important;
+
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+
+    .el-form--inline .el-form-item {
+        vertical-align: top;
+        width: 50%;
+        display: flex;
+        margin-right: 0;
+        .el-form-item__content {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .el-select,
+        .el-date-editor {
+            width: 100%;
+        }
+    }
+    .el-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dialog-footer {
+        width: 100%;
+    }
+}
+
+:deep(.exam-dialog) {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+
+    .exam-main {
+        display: flex;
+        min-height: 30vh;
+        max-height: 60vh;
+        > div {
+            flex: 1;
+            overflow-y: auto;
+            .el-tree-node {
+                white-space: pre-wrap;
+            }
+            .el-tree-node__content {
+                height: auto;
+            }
+        }
+        .dialog-left {
+            border-right: 1px dashed $el-main-color;
+        }
+        .exam-title {
+            color: $el-main-color;
+            font-weight: 700;
+            font-size: 18px;
+            text-indent: 20px;
+            cursor: default;
+        }
+        .dialog-right {
+            .el-checkbox.is-checked {
+                display: none;
+            }
+        }
+    }
+    :deep(.el-tree-node__label) {
+        font-size: 15px;
+    }
+}

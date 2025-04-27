@@ -1,0 +1,235 @@
+.planjoin-container {
+    height: 100%;
+    font-size: 14px;
+    background-color: #f2f5f9;
+    padding: 0 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    .planqc-top,
+    .planqc-bottom {
+        height: 48%;
+        max-height: 44vh;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 20px;
+        .title {
+            font-size: 16px;
+        }
+    }
+    .planqc-top,
+    .planqc-bottom {
+        display: flex;
+        flex-direction: column;
+        .data-class {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            .el-table {
+                flex: 1;
+                overflow-y: auto;
+            }
+            .el-table::before {
+                height: 0;
+            }
+            .el-table--border {
+                border-bottom: 1px solid #ebeef5;
+            }
+        }
+        .history-table {
+            overflow-y: auto;
+        }
+        .el-table::before {
+            height: 0;
+        }
+        .el-table--border {
+            border-bottom: 1px solid #ebeef5;
+        }
+        .el-pagination {
+            text-align: center;
+            margin-bottom: -10px;
+            margin-top: 14px;
+        }
+    }
+
+    .QCdialog {
+        ::v-deep .el-dialog__body {
+            padding: 10px;
+        }
+        .el-form-item {
+            margin-bottom: 10px;
+            .el-select,
+            .el-date-editor {
+                width: 100%;
+            }
+        }
+        .colorName {
+            color: $el-main-color;
+        }
+        .QC-box {
+            text-align: center;
+        }
+    }
+}
+
+::v-deep .add-dialog,
+::v-deep .QCdialog {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+    .el-form-item__label {
+        width: 100px !important;
+        text-align: center;
+    }
+    .el-form-item__content {
+        margin-left: 100px !important;
+    }
+}
+::v-deep .QCdialog {
+    width: 60vw;
+    .el-dialog__header {
+        border-bottom: 0 !important;
+    }
+    .el-dialog__body {
+        padding: 0 !important;
+    }
+    .head {
+        // height: 150px;
+        //background: url('../images/plan-images/qc_bg.png') no-repeat center;
+        background-size: cover;
+        padding: 20px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    .head-top {
+        display: flex;
+        justify-content: space-between;
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .qc-sel {
+            .el-input__inner {
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            ::placeholder {
+                color: #fff;
+            }
+        }
+    }
+    .head-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            display: flex;
+            align-items: center;
+            .el-progress__text {
+                color: #fff;
+                letter-spacing: 3px;
+                font-size: 16px !important;
+            }
+            .el-progress-circle {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            .explain {
+                display: flex;
+                > div {
+                    margin: 0 10px;
+                }
+                .total,
+                .err-count {
+                    padding: 3px 6px;
+                    border-radius: 4px;
+                }
+                .total {
+                    background-color: #ec7a35;
+                }
+                .err-count {
+                    background-color: #ec3535;
+                }
+            }
+        }
+    }
+    .contain {
+        padding: 20px;
+        box-sizing: border-box;
+        .focusItem {
+            border-color: $el-main-color !important;
+            background: #eeeeee;
+            color: $el-main-color;
+        }
+        .one-check {
+            display: -webkit-box;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            .onecheck-item {
+                cursor: pointer;
+                padding: 10px 15px;
+                margin-right: 15px;
+                border: 1px solid #d7d7d7;
+                border-radius: 4px;
+            }
+            .el-checkbox {
+                margin-right: 10px;
+            }
+        }
+        .two-check {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-height: 300px;
+            overflow-y: auto;
+            // padding: 30px 0;
+            .two-box {
+                width: 25%;
+                border-radius: 4px;
+                overflow: hidden;
+                letter-spacing: 1px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .two-head {
+                background: #2d559f;
+                color: #fff;
+                box-sizing: border-box;
+                padding: 5px 10px;
+                .el-checkbox {
+                    margin-right: 10px;
+                }
+                .el-checkbox__input.is-checked .el-checkbox__inner {
+                    border-color: #fff;
+                }
+            }
+            .two-main {
+                height: 130px;
+                background: #eee;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.demo-form-inline {
+    .el-form-item {
+        margin-bottom: 12px;
+    }
+    .form-bottom {
+        .el-form-item {
+            width: 48%;
+            ::v-deep .el-form-item__content {
+                text-align: left;
+            }
+            .el-input {
+                width: 50%;
+            }
+        }
+        .eval-label {
+            font-size: 14px;
+            color: $el-main-color;
+            background: aliceblue;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 8px solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    }
+    .btn-box {
+        text-align: center;
+        margin-bottom: 46px;
+        .el-button--medium {
+            padding: 8px 30px;
+            background-color: #2465bf;
+        }
+    }
+}
+.tips {
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+::v-deep .eval-row {
+    height: 74.8vh;
+    .left-form {
+        overflow-y: auto;
+    }
+    .pg-year {
+        margin-bottom: 20px;
+    }
+    .el-form--inline .el-form-item__label {
+        width: 17em;
+    }
+    .el-form--inline .el-form-item .el-input {
+        width: 12em;
+    }
+    .form-col {
+        display: flex;
+        flex-direction: column;
+        .demo-form-inline {
+            flex: 1;
+        }
+    }
+    > .el-col {
+        height: 100%;
+        .el-dropdown {
+            float: right;
+            .el-dropdown-link {
+                cursor: pointer;
+                color: #cccccc;
+            }
+        }
+        .right-card {
+            display: flex;
+            flex-direction: column;
+            .el-card__body {
+                flex: 1;
+                overflow-y: auto;
+            }
+            .layer-tree {
+                .el-tree-node__content {
+                    height: auto;
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    white-space: normal;
+                    padding: 8px 0;
+                    font-size: 14px;
+                    .el-tree-node__expand-icon {
+                        padding: 5px;
+                    }
+                }
+                .scope-class {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                .handle-btns {
+                    display: flex;
+                    margin-left: 10px;
+                    align-items: center;
+                    > .el-button {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .header-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                font-size: 16px;
+            }
+            .el-button--primary {
+                background-color: $el-main-color;
+            }
+        }
+        ::v-deep .el-tree {
+            .el-tree-node__expand-icon {
+                position: absolute;
+                right: 2%;
+            }
+            .el-tree-node__expand-icon.expanded {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    #chart-box {
+        height: 37vh;
+        width: 100%;
+        position: relative;
+    }
+    .pg-radiobox {
+        margin-bottom: 20px;
+    }
+}

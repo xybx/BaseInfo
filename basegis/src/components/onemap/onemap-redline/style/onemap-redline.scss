@@ -1,0 +1,98 @@
+::v-deep .red-line {
+    width: 460px;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+
+    .el-form-item__label {
+        font-weight: 700;
+    }
+    .el-dialog__body {
+        padding: 10px 20px 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .result {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .table {
+            flex: 1;
+            overflow-y: auto;
+        }
+    }
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: aliceblue;
+        border-radius: 4px;
+        padding: 6px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        .el-dropdown {
+            margin-right: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .count {
+            color: $el-main-color;
+        }
+    }
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        color: $el-main-color;
+        margin-bottom: 10px;
+    }
+    .table {
+        max-height: 60vh;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        .el-table td,
+        .el-table th {
+            padding: 0.2vw 0;
+        }
+    }
+    .btns {
+        text-align: center;
+    }
+    .plain-btn {
+        color: $el-main-color;
+        background: #ecf5ff;
+        border-color: $el-main-color;
+    }
+    .red-tips {
+        color: red;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+.el-dialog__wrapper {
+    position: absolute !important;
+    overflow: visible;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}

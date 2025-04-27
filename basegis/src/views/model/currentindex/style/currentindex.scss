@@ -1,0 +1,190 @@
+div {
+    box-sizing: border-box;
+}
+.model-container {
+    height: 100%;
+    background-color: #f2f5fa;
+    padding: 10px;
+    box-sizing: border-box;
+    ::v-deep .detail-model {
+        .btns {
+            text-align: center;
+            .el-form-item__content {
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+.model-inbox {
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid $el-main-color;
+    letter-spacing: 1px;
+    background: #f0f8ff;
+}
+.title {
+    font-size: 16px;
+}
+.el-divider--horizontal {
+    margin: 10px 0;
+}
+::v-deep .el-radio-button__inner {
+    border-radius: 4px !important;
+    margin: 0 10px;
+    border: 1px solid #f1f4f9;
+    background-color: #f1f4f9;
+}
+::v-deep .el-radio-button:first-child .el-radio-button__inner {
+    margin-left: 0;
+    border-left: 0;
+}
+::v-deep .el-input-group__append {
+    background-color: $el-main-color;
+    color: #fff;
+}
+.md-box {
+    margin-top: 10px;
+    flex: 1;
+    width: calc(100vw - 90px);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-gap: 10px;
+}
+.box-card {
+    font-size: 14px;
+    background-color: #f1f4f9;
+    box-shadow: 2px 2px lightgray;
+    ::v-deep .el-card__body {
+        padding-top: 0;
+        height: 67%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .head-card {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 10em;
+        display: inline-block;
+    }
+    .date {
+        margin-left: 10px;
+        color: #999;
+    }
+    .content-label {
+        color: $el-main-color;
+        font-weight: 700;
+    }
+    .right-tag {
+        color: $el-main-color;
+        float: right;
+    }
+    .content {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        line-height: 34px;
+        height: 7em;
+    }
+    .foot-btn {
+        text-align: center;
+        .detail,
+        .run {
+            padding: 8px 30px;
+        }
+        .run {
+            background-color: $el-main-color;
+        }
+        .run:focus,
+        .run:hover {
+            opacity: 0.8;
+        }
+    }
+}
+.el-pagination {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+::v-deep .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: $el-main-color;
+}
+::v-deep .addSLdialog {
+    width: 500px;
+    .el-select {
+        width: 100%;
+    }
+    .mxname-item {
+        .el-form-item__content {
+            display: flex;
+        }
+        .mxname {
+            flex: 1;
+        }
+    }
+    .year-item {
+        margin-bottom: 0;
+    }
+    .year {
+        width: 100px;
+        margin-left: 10px;
+    }
+    .btns {
+        text-align: center;
+    }
+    .el-select .el-input.is-disabled .el-input__inner {
+        cursor: default;
+        color: #606266;
+        background-color: #fff;
+    }
+}
+
+::v-deep .el-dialog__header {
+    padding: 6px !important;
+    padding-left: 20px !important;
+    border-bottom: 1px solid #d7d7d7;
+    background: $el-main-color;
+    .el-dialog__title {
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    .el-dialog__headerbtn {
+        top: 10px !important;
+        .el-dialog__close {
+            color: #fff;
+        }
+    }
+}
+::v-deep .el-dialog__body {
+    padding: 20px !important;
+}
+::v-deep textarea {
+    font-family: 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+.el-button--medium {
+    padding: 0.321vw 0.542vw;
+    font-size: 0.729vw;
+    border-radius: 0.208vw;
+}

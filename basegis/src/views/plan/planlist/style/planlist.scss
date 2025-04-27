@@ -1,0 +1,95 @@
+.admin-container,
+.archive-container {
+    min-height: 100%;
+    font-size: 14px;
+    background-color: #f2f5f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    .title {
+        font-size: 16px;
+    }
+    .el-pagination {
+        text-align: center;
+        margin-top: 8px;
+    }
+    .table-contain {
+        flex: 1;
+        display: flex;
+        .left-menu {
+            width: 120px;
+            height: 100%;
+            margin-right: 10px;
+            .el-menu {
+                width: 100%;
+                .el-menu-item {
+                    padding: 0 !important;
+                    text-align: center;
+                }
+            }
+        }
+        .right-table {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        :deep(.el-table) {
+            .cell {
+                font-size: 15px;
+            }
+            .el-button {
+                font-size: 15px;
+            }
+        }
+    }
+    .el-select {
+        display: block;
+    }
+    .el-dialog__footer,
+    .dialog-footer {
+        text-align: center;
+    }
+    .btns {
+        text-align: center;
+        .upload {
+            .creat-pic {
+                margin-left: 15px;
+            }
+            .el-upload-list {
+                text-align: left;
+            }
+        }
+    }
+    .el-input-group__append {
+        background: $el-main-color;
+        color: #fff;
+    }
+    td.handle-col {
+        .el-button {
+            margin: 0 10px;
+        }
+    }
+}
+::v-deep .add-dialog {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+}

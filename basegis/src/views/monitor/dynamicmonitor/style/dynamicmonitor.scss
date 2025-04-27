@@ -1,0 +1,127 @@
+// 动态监测
+.monitor-container {
+    height: 100%;
+    background-color: #f2f5f9;
+    box-sizing: border-box;
+    overflow: hidden;
+    ::v-deep .header-txt {
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            color: $el-main-color;
+        }
+    }
+    ::v-deep .focus-header {
+        color: $el-main-color;
+    }
+    ::v-deep .top {
+        height: 60%;
+        > .el-col {
+            height: 100%;
+        }
+        .top-left,
+        .top-right {
+            > div {
+                height: 50%;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+            .el-card__body {
+                height: 80%;
+                padding: 0;
+            }
+        }
+        .top-center {
+            padding: 0 !important;
+            > div {
+                height: 100%;
+                padding: 5px 0;
+                box-sizing: border-box;
+            }
+            .el-card__body {
+                height: 100%;
+                padding: 0;
+            }
+            // #cityField {
+            //     background: url('../images/index-images/mapchartdemo.png')
+            //         no-repeat center;
+            //     background-size: contain;
+            // }
+        }
+    }
+    ::v-deep .bottom {
+        height: 39%;
+        > .el-col {
+            height: 100%;
+        }
+        .bottom-left,
+        .bottom-right {
+            > div {
+                height: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+        }
+        .bottom-left {
+            padding-right: 0 !important;
+        }
+        .bottom-right {
+            padding-left: 0 !important;
+        }
+        .el-card__body {
+            padding: 0;
+            height: 100%;
+        }
+    }
+
+    ::v-deep .el-card__header {
+        padding: 10px;
+    }
+    ::v-deep .el-tabs {
+        height: 100%;
+        .el-tabs__content {
+            height: 80%;
+        }
+        .el-tab-pane {
+            height: 100%;
+        }
+        .el-tabs__nav-wrap {
+            padding: 0 10px;
+        }
+        .el-tabs__nav-wrap::after {
+            height: 1px;
+            background-color: #ebeef5;
+        }
+    }
+    ::v-deep .el-dialog {
+        margin-top: 12vh !important;
+        .el-dialog__body {
+            padding: 0 20px 20px;
+        }
+    }
+}
+// 详细信息
+::v-deep .modetail {
+    .el-dialog__header {
+        padding: 6px !important;
+        padding-left: 20px !important;
+        border-bottom: 1px solid #d7d7d7;
+        background: $el-main-color;
+        .el-dialog__title {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .el-dialog__headerbtn {
+            top: 10px !important;
+            .el-dialog__close {
+                color: #fff;
+            }
+        }
+    }
+    .el-dialog__body {
+        padding: 20px !important;
+    }
+}
+.baseline-container {
+    height: 55vh;
+}
